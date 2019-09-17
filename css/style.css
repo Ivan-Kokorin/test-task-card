@@ -16,14 +16,20 @@
 	max-width: 288px;
 	width: 100%; /*чтобы не схлапывалась, на случай, если карточка будет использована как flex-элемент*/
 	min-height: 453px;
-	transition: 0.3s;
+	transition: 500ms linear;
 	position: relative;
 	background-color: #2a70e2;
 	overflow: hidden;
+	-moz-transition: 500ms linear;
+	-webkit-transition: 500ms linear;
+	-o-transition: 500ms linear;
 	transition: 500ms linear;
 }
 
 .card:hover > .card__btn{
+	-webkit-transform: scale(1.5);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
@@ -32,7 +38,10 @@
 	height: 295px;
 	padding-top: 70px;
 	box-sizing: border-box;
-	transition: 0.3s;
+	-moz-transition: 300ms linear;
+	-webkit-transition: 300ms linear;
+	-o-transition: 300ms linear;
+	transition: 300ms linear;
 	background: url('../img/icon.svg') center top no-repeat;
 }
 .btnPlus{
@@ -41,6 +50,9 @@
 	background-color: #2a70e2;
 	margin: 0 auto;
 	box-shadow: 0 10px 20px 10px rgba(0,0,0,0.1);
+	-moz-transition: 500ms linear;
+	-webkit-transition: 500ms linear;
+	-o-transition: 500ms linear;
 	transition: 500ms linear;
 }
 .card__checkBtn{
@@ -69,7 +81,7 @@
 	font-weight: normal;
 	color: #fff;
 	text-align: center;
-	margin-top: 15px;s
+	margin-top: 15px;
 }
 .btnPlus__horizontLine{
 	width: 38%;
@@ -86,6 +98,9 @@
 	position: absolute;
 	top: 31%;
 	left: 46%;
+	-moz-transition: 200ms linear;
+	-webkit-transition: 200ms linear;
+	-o-transition: 200ms linear;
 	transition: 200ms linear;
 }
 /*dinamic style*/
