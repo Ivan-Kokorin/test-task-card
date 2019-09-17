@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.content__wrap{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*style of card*/
+.card{
+	max-width: 288px;
+	width: 100%; /*чтобы не схлапывалась, на случай, если карточка будет использована как flex-элемент*/
+	min-height: 453px;
+	transition: 0.3s;
+	position: relative;
+	background-color: #2a70e2;
+	overflow: hidden;
+	transition: 500ms linear;
+}
+
+.card:hover > .card__btn{
+	transform: scale(1.1);
+}
+
+.card__btn{
+	max-width: 288px;
+	height: 295px;
+	padding-top: 70px;
+	box-sizing: border-box;
+	transition: 0.3s;
+	background: url('../img/icon.svg') center top no-repeat;
+}
+.btnPlus{
+	max-width: 162px;
+	border-radius: 50%;
+	background-color: #2a70e2;
+	margin: 0 auto;
+	box-shadow: 0 10px 20px 10px rgba(0,0,0,0.1);
+	transition: 500ms linear;
+}
+.card__checkBtn{
+	display: none;
+}
+.btnPlus__relative{
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	cursor: pointer;
+}
+.card__title{
+	font-family: 'Montserrat', sans-serif;
+	font-size:16px;
+	line-height:1.5;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	margin-top: 40px;
+}
+.card_description{
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	line-height:1.5;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+	margin-top: 15px;s
+}
+.btnPlus__horizontLine{
+	width: 38%;
+	height: 8%;
+	background-color: #fff;
+	position: absolute;
+	top: 46%;
+	left: 31%;
+}
+.btnPlus__verticalLine{
+	width: 8%;
+	height: 38%;
+	background-color: #fff;
+	position: absolute;
+	top: 31%;
+	left: 46%;
+	transition: 200ms linear;
+}
+/*dinamic style*/
+.active{
+	background-color: #81a809;
+}
+.minus{
+	height: 0;
+	top: 12vh;
+}
